@@ -14,7 +14,7 @@ ENV HTTP_ADDR :80
 ENV HTTPS_ADDR :443
 
 
-CMD chmod +x /build.sh && /build.sh
+RUN mkdir -p $MY_FILES && chmod +x /build.sh && /build.sh
 
 EXPOSE 4443
 EXPOSE 80
